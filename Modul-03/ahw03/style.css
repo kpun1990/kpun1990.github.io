@@ -1,0 +1,167 @@
+/* Задание 1 */
+
+html {
+    box-sizing: border-box;
+}
+
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* PlayFair-Display fonts */
+@font-face {
+    font-family: 'PlayFair-Display';
+    src: url(../fonts/PlayfairDisplay-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+/* Ubuntu fonts */
+/* @font-face {
+    font-family: 'Ubuntu';
+    src: url(../fonts/Ubuntu-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+} */
+
+body {
+    font-family: 'PlayFair-Display';
+    font-size: 16px;
+    line-height: 1.72;
+    color: #626262;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#header {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* 
+#menu {
+    
+} */
+
+.menu-list {
+    text-align: center;
+    text-transform: uppercase;
+    color: #626262;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu-item + .menu-item {
+    padding-left: 80px;
+}
+
+.menu-link {
+    color: inherit;
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
+    color: #03a9f4;
+}
+
+/* Задание 2 */
+
+/* #main {
+
+} */
+
+/* .section-article {
+
+} */
+
+.cards {
+    letter-spacing: -.34em;
+    margin: 0 -30px;
+}
+
+.card {
+    vertical-align: middle;
+    width: 470px;
+    padding: 30px 30px 30px;
+    margin: 0 auto;
+    letter-spacing: 0;
+}
+
+.card img {
+    margin-bottom: 25px;
+}
+/* 
+.card-body {
+
+}
+
+.card-header {
+
+} */
+
+.category-link {
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+}
+
+.card .category-link {
+    color: #b4ad9e;
+    text-transform: uppercase;
+}
+
+.card h2 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.card h2 a {
+    color: inherit;
+}
+
+.card1 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    padding: 0 30px 30px;
+    letter-spacing: 0;
+}
+
+.card1 .category-link {
+    color: #b4ad9e;
+    text-transform: uppercase;
+}
+
+.card1 h2 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.card1 h2 a {
+    color: inherit;
+}
