@@ -1,0 +1,146 @@
+html {
+    box-sizing: border-box;
+}
+
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* PlayFair-Display fonts */
+@font-face {
+    font-family: 'PlayFair-Display';
+    src: url(../fonts/PlayfairDisplay-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+/* Ubuntu fonts */
+ @font-face { 
+    font-family: 'Ubuntu';
+    src: url(../fonts/Ubuntu-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+} 
+
+body {
+    font-family: 'PlayFair-Display';
+    font-size: 14px;
+    line-height: 1.72;
+    color: #626262;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#header {
+    padding: 55px 0;
+}
+
+.container {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav-list {
+    text-align: center;
+    text-transform: uppercase;
+    color: #626262;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-item + .nav-item {
+    padding-left: 90px;
+}
+
+.nav-link {
+    color: inherit;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    color: #03a9f4;
+}
+
+.cards {
+    letter-spacing: -.34em;
+    margin: 0 -30px;
+}
+
+.card {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    padding: 0 30px 110px;
+    letter-spacing: 0;
+}
+
+.card img {
+    margin-bottom: 25px;
+}
+
+.category-link {
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+}
+
+.card .category-link {
+    font-family:'Ubuntu';
+    color: #b4ad9e;
+    text-transform: uppercase;
+}
+
+.card h2 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.card h2 a {
+    color: inherit;
+}
+
+.buttom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    font-size: 20px;
+
+    line-height: 1;
+    border: 2px solid #000;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 20px 35px;
+    text-decoration: none;
+    color: #626262;
+}
+
+.btn::first-letter {
+    text-transform: uppercase;
+}
