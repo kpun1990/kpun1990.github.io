@@ -1,0 +1,207 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: #626262;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Ubuhtu', sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    color: #626262;
+    counter-reset: count-item3;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+/* Задание 1 */
+
+.nav {
+    padding: 20px 0;
+}
+.nav-menu {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    float: left;
+}
+
+.nav-menu li:not(:last-child) {
+    margin-right: 25px;
+}
+
+.nav-menu a {
+    display: block;
+    color: inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+    color: rgb(255, 200, 0);
+    border-radius: 15px;
+    box-shadow: 0 0 5px 5px rgba(128, 128, 128, 0.65);
+    background: rgba(128, 128, 128, 0.65);
+}  
+
+/* Задание 2 */
+
+.list1 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.item1 {
+    padding: 5px 0;
+}
+
+.item1 a {
+    color: #0E1116;
+}
+
+.item1:nth-child(3n+1) {
+    background-color: #88292F;
+}
+
+.item1:nth-child(3n+2) {
+    background-color: #5DB7DE;
+}
+
+.item1:nth-child(3n+3) {
+    background-color: #0D5D56;
+}
+
+/* Задание 3 */
+
+.list2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.item2 {
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+.link1::before {
+    content: '\2192';
+    padding-right: 5px;
+}
+
+.link1::after {
+    content: '\2192';
+    padding-left: 5px;
+}
+
+.item2:nth-child(n+4):nth-child(-n+6) a::before  {
+    content: '\2192';
+    padding-right: 10px;
+}
+
+.item2:nth-child(n+4):nth-child(-n+6) a::after {
+    content: '\2192';
+    padding-left: 10px;
+}
+
+.item2:nth-child(n+7) .link2 {
+    font-size: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    padding: 5px 50px;
+}
+
+.item2:nth-child(n+7) .link2::before {
+    content: '\2192';
+    font-size: 25px;
+    position: absolute;  
+    top: 40%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.item2:nth-child(n+7) .link2::after {
+    content: '\2192';
+    font-size: 25px;
+    position: absolute;  
+    top: 40%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* Задание 4 */
+
+.list3 {
+    margin: 0;
+    padding: 0;
+}
+
+.item3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    counter-increment: count-item3;
+}
+
+.link3 {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.item3 .link3::before {
+    content: counter(count-item3, upper-roman);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    background: rgba(190, 189, 189, 0.699);
+}

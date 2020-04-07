@@ -1,0 +1,227 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 'Open+Sans', 'Roboto', sans-serif;
+    color: #555252;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+} 
+
+.nav {
+    padding: 35px 0;
+    margin-bottom: 28px;
+}
+
+.site-logo {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    color: inherit;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 32px;
+    display: inline-block;
+    width: 82px;
+    vertical-align: middle;
+}
+
+.nav a::first-letter {
+    color: #1abc9c;
+    font-weight: 900;
+}
+
+.nav-menu {
+    display: inline-block;
+    width: 1054px;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    list-style: none;
+    vertical-align: middle;
+}
+
+.nav-menu li {
+    display: inline-block;
+}
+
+.nav-menu li:not(:last-child) {
+    margin-right: 32px;
+}
+
+.nav-menu a {
+    font-family: "Open+Sans", sans-serif;
+    color: #0f0101;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 11px;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+    color: #1abc9c;
+}
+
+.featured-products {
+    margin-bottom: 100px;
+}
+
+.section-title {
+    display: block;
+    margin: 0;
+    margin-bottom: 77px;
+    padding-bottom: 35px;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #515151;
+    text-align: center;
+}
+
+.section-title::after {
+    content: "";
+    bottom: 0;
+    left: 49.5%;
+    transform: translateX(-50%);
+    position: absolute;
+    height: 7px;
+    width: 164px;
+    background: #1abc9c;
+}
+
+.cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    margin-bottom: 85px;
+}
+
+.card {
+    display: inline-block;
+    width: 285px;
+    padding: 15px;
+}
+
+.product {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.photo {
+    background: #e9f0fd;
+}
+
+.name {
+    background: #323232;
+    padding-left: 14px;
+}
+
+.price {
+    display: inline-block;
+    float: right;
+    width: 54px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.44);
+}
+
+.product:hover .name,
+.product:focus .name {
+    background: #1abc9c;
+}
+
+.blog-cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    margin-bottom: 85px;
+}
+
+.card-blog {
+    display: inline-block;
+    width: 380px;
+    padding: 0 15px;
+}
+
+.title-card {
+    font-family: "Open+Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    margin: 0;
+    padding: 6px 0 13px;
+    position: relative;
+}
+
+.title-card::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 3px;
+    width: 136px;
+    background: #1abc9c;
+}
+
+.text {
+    font-family: "Open+Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    margin: 0;
+    padding: 24px 0 13px;
+}
+
+.btn {
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+    border-radius: 3px;
+    font-family: "Open+Sans", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    text-decoration: none;
+    background: #1abc9c;
+    text-align: center;
+    padding: 12px 0;
+}
