@@ -22,7 +22,6 @@ img {
 #wrapper {
     width: 100%;
     overflow: hidden;
-    background-color: #e9f0fd;
 }
 
 .container {
@@ -90,6 +89,10 @@ img {
 .link-menu:hover,
 .link-menu:focus {
     color: #1abc9c;
+}
+
+.main {
+    background-color: #e9f0fd;
 }
 
 .sliders {
