@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-size: 'Open+Sans', 'Roboto', sans-serif;
+    font-family: 'Open+Sans', 'Roboto', sans-serif;
     color: #555252;
     font-size: 14px;
     line-height: 26px;
@@ -21,7 +21,7 @@ img {
     height: auto;
 }
 
-.clearfix {
+.clearfix::after {
     display: table;
     content: '';
     clear: both;
@@ -62,17 +62,17 @@ img {
 }
 
 .nav-menu {
+    list-style: none;
     width: 490px;
     float: right;
     margin: 0;
     margin-top: 6px;
     padding: 0;
-    font-size: 14px;
-    list-style: none;
 }
 
 .menu-item {
     float: left;
+    font-size: 14px;
 }
 
 .menu-item:not(:last-child) {
@@ -92,6 +92,8 @@ img {
 .link:focus {
     color: #1abc9c;
 }
+
+/* featured-products */
 
 .featured-products {
     margin-bottom: 100px;
