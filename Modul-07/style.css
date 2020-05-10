@@ -14,8 +14,6 @@ body {
     font-family: 'Montserrat', 'Roboto Slab', 'wisdomscript', 'droidserif', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap');
-
 @font-face {
     font-family: 'wisdomscript';
     src: url('fonts/wisdomscriptaj/wisdomscriptaj.woff2') format('woff2'),
@@ -33,9 +31,6 @@ body {
     font-weight: normal;
     font-style: italic;
 }
-
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto Slab', serif; */
 
 #wrapper {
     width: 100%;
@@ -204,9 +199,9 @@ textarea {
     width: 100%;
 }
 
-input[type="text"]::-webkit-input-placeholder,
-input[type="email"]::-webkit-input-placeholder,
-input[type="submit"]::-webkit-input-placeholder,
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="submit"]::placeholder,
 textarea::-webkit-input-placeholder {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
