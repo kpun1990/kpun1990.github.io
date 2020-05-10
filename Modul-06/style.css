@@ -6,6 +6,8 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -45,10 +47,6 @@ img {
     font-size: 30px;
     font-style: normal;
     color: #95e1d3;
-}
-
-.site-logo span {
-    text-transform: capitalize;
 }
 
 .site-menu {
@@ -94,7 +92,6 @@ img {
 
 .menu-item:hover .menu-link::before,
 .menu-item:focus .menu-link::before {
-
     width: 100%;
 }
 
@@ -255,74 +252,55 @@ img {
 
 .team-item {
     width: 380px;
-    position: relative;
 }
 
-.backgraund {
+.overlay {
     display: block;
-    width: 380px;
+    width: 100%;
     height: 470px;
     background-color: #95e1d3;
-    margin-bottom: 30px;
+    position: relative;
+    margin-bottom: 28px;
 }
 
 .image {
-    display: block;
-    width: 380px;
-    height: 470px;
     position: absolute;
-    left: 0;
     top: 0;
-    transition: left 200ms linear, top 200ms linear;
+    left: 0;
+    transition: top 200ms linear, left 200ms linear;
 }
 
-.img1 {
-    background-image: url(../Modul-06/images/img/img1.jpg);
-    transition: background-image 200ms linear;
-}
-
-.img2 {
-    background-image: url(../Modul-06/images/img/img2.jpg);
-}
-
-.img3 {
-    background-image: url(../Modul-06/images/img/img3.jpg);
-}
-
-
-.img1:hover,
-.img1:focus {
-    background-image: linear-gradient( to top,
+.image::before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, 
     rgba(252, 227, 138, 0.9), 
-    rgba(243, 129, 129, 0.9)),
-    url(../Modul-06/images/img/img1.jpg);
-    left: -10px;
-    top: -10px;
+    rgb(243, 129, 129, 0.9));
+    opacity: 0;
+    transition: opacity 200ms linear;
 }
 
-.img2:hover,
-.img2:focus {
-    background-image: linear-gradient( to top,
+.overlay:hover .image,
+.overlay:focus .image {
+    top: -10px;
+    left: -10px;
+}
+
+.overlay:hover .image::before,
+.overlay:focus .image::before {
+    background: linear-gradient(to top, 
     rgba(252, 227, 138, 0.9), 
-    rgba(243, 129, 129, 0.9)),
-    url(../Modul-06/images/img/img2.jpg);
-    left: -10px;
-    top: -10px;
+    rgb(243, 129, 129, 0.9));
+    opacity: 1; 
 }
 
-.img3:hover,
-.img3:focus {
-    background-image: linear-gradient( to top,
-    rgba(252, 227, 138, 0.9), 
-    rgba(243, 129, 129, 0.9)),
-    url(../Modul-06/images/img/img3.jpg);
-    left: -10px;
-    top: -10px;
-}
-
-.social {
-    display: none;
-    /* display: flex; */
+.social {    
+    display: flex;
     justify-content: space-between;
     position: absolute;
     left: 50%;
@@ -333,11 +311,13 @@ img {
     margin: 0;
     width: 227px;
     height: 56px;
+    opacity: 0;
+    transition: opacity 200ms linear;
 }
 
-.image:hover .social,
-.image:focus .social {
-    display: flex;
+.overlay:hover .social,
+.overlay:focus .social {
+    opacity: 1;
 }
 
 .social a {
@@ -414,7 +394,8 @@ img {
     margin: 0;
 }
 
-.footer-copyright span {
+.footer-copyright a {
+    text-decoration: none;
     color: #f38181;
 }
 
